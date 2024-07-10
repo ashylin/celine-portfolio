@@ -1,0 +1,18 @@
+.header-container {
+  width: 820px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  margin: 128px auto;
+}
+
+.header {
+  font-family: Merriweather, Arial;
+  font-size: 32px;  
+}
+
+.caption {
+  font-size: 16px;
+}

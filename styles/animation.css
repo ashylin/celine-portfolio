@@ -1,0 +1,51 @@
+@keyframes fadeInFromBottom {
+  from {
+    transform: translateY(204px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-40px);
+  }
+  35% {
+    transform: translateY(-25px);
+  }
+  67% {
+    transform: translateY(-15px);
+  }
+}
+
+/* home page */
+.header-container {
+  animation: fadeInFromBottom 0.5s ease-out;
+}
+
+.project-grid {
+  animation: fadeInFromBottom 0.75s ease;
+}
+
+/* me page */
+.intro {
+  animation: bounce 1s ease-out;
+}

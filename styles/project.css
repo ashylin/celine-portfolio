@@ -1,0 +1,22 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 400px;
+}
+
+.project-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 6px;
+  margin-bottom:  6px;
+}
+
+.project-caption {
+  font-size: 14px;
+  margin-bottom: 20px;
+}

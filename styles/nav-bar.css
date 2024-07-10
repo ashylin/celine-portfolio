@@ -1,0 +1,51 @@
+.nav-bar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  width: min-content;
+  gap: 24px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  top: 32px;
+
+  background-color: #222222cc;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 1px #7d7d7d;
+  font-family: Inter, Arial;
+}
+
+.nav-home {
+  padding-left: 24px;
+  color: #747474;
+}
+
+.nav-home:hover {
+  color: #FFDB80;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-playground {
+  color: #747474;
+}
+
+.nav-playground:hover {
+  color: #FFDB80;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-me {
+  padding-right: 24px;
+  color: #747474;
+}
+
+.nav-me:hover {
+  color: #FFDB80;
+  transition: color 0.3s;
+  cursor: pointer;
+}
