@@ -44,7 +44,14 @@
   color: #747474;
 }
 
-.nav-me:hover {
+.nav-home a,
+.nav-me a {
+  color: #747474;
+  text-decoration: none;
+}
+
+.nav-home a:hover,
+.nav-me a:hover {
   color: #FFDB80;
   transition: color 0.3s;
   cursor: pointer;
