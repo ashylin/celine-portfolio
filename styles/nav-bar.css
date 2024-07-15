@@ -12,6 +12,7 @@
   top: 32px;
 
   background-color: #222222cc;
+  backdrop-filter: blur(4px); /* Apply blur effect to the background */
   height: 40px;
   border-radius: 20px;
   border: solid 1px #7d7d7d;
@@ -29,11 +30,11 @@
   cursor: pointer;
 }
 
-.nav-playground {
+.nav-theatre {
   color: #747474;
 }
 
-.nav-playground:hover {
+.nav-theatre:hover {
   color: #FFDB80;
   transition: color 0.3s;
   cursor: pointer;
