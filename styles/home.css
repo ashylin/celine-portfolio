@@ -6,7 +6,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 24px;
-  margin: 128px auto;
+  margin: auto;
+  margin-bottom: 128px;
 }
 
 .header {
@@ -25,7 +26,7 @@
   row-gap: 32px;
 
   width: 912px;
-  margin: 0  auto 128px auto;
+  margin: 0 auto;
 }
 
 .card {
@@ -33,14 +34,19 @@
   margin: auto;
 }
 
+.thumbnail {
+  width: 100%;
+}
+
 @media only screen and (max-width: 920px) {
   .header-container {
-    width: 88%;
+    width: 80%;
     margin: 128px auto;
   }
 
   .project-grid {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .card {
