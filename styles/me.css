@@ -16,7 +16,13 @@
   border-radius: inherit;
 }
 
-@media (max-width: 824px) {
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media only screen and (max-width: 824px) {
   .frame {
     flex-direction: column;
     align-items: center;
@@ -30,16 +36,10 @@
   }
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
 .intro {
   font-size: 64px;
   font-weight: bold;
-  font-family: Merriweather, Arial;
+  font-family: "Playfair Display", Arial;
 }
 
 .about,
