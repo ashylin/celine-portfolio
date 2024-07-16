@@ -1,0 +1,72 @@
+p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.header img {
+  width: 20%;
+}
+
+.title {
+  font-family: "Playfair Display", Arial;
+  font-size: 48px;
+  line-height: 56px;
+  width: 50%;
+  margin: 32px auto;
+}
+
+.subtitle {
+  width: 24%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.heading {
+  color: #FFDB80;
+  margin-top: 100px;
+}
+
+.subheading {
+  font-family: "Playfair Display", Arial;
+  font-size: 32px;
+}
+
+.caption {
+  width: 32%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 32%;
+  margin: 32px auto;
+  row-gap: 8px;
+}
+
+.contact-grid p {
+  text-align: left;
+}
+
+.link {
+  font-size: 16px;
+}
+
+.link a {
+  color: white;
+  text-underline-offset: 0.2em;
+}
