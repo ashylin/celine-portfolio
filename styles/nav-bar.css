@@ -53,6 +53,7 @@
 }
 
 .nav-home a:hover,
+.nav-theatre a:hover,
 .nav-me a:hover {
   color: #FFDB80;
   transition: color 0.3s;
