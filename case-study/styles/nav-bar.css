@@ -1,0 +1,62 @@
+.nav-bar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  width: min-content;
+  gap: 24px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  top: 32px;
+  z-index: 100;
+
+  background-color: #222222cc;
+  backdrop-filter: blur(4px); /* Apply blur effect to the background */
+  height: 40px;
+  border-radius: 20px;
+  border: solid 1px #7d7d7d;
+  font-family: Inter, Arial;
+}
+
+.nav-home {
+  padding-left: 24px;
+  color: #747474;
+}
+
+.nav-home:hover {
+  color: #FFDB80;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-theatre {
+  color: #747474;
+}
+
+.nav-theatre:hover {
+  color: #FFDB80;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-me {
+  padding-right: 24px;
+  color: #747474;
+}
+
+.nav-home a,
+.nav-theatre a,
+.nav-me a {
+  color: #747474;
+  text-decoration: none;
+}
+
+.nav-home a:hover,
+.nav-theatre a:hover,
+.nav-me a:hover {
+  color: #FFDB80;
+  transition: color 0.3s;
+  cursor: pointer;
+}
