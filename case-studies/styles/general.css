@@ -1,3 +1,20 @@
+body {
+  margin: 128px auto;
+  padding: 0;
+
+  font-family: Inter, Arial;
+  background-color: #121212;
+  color: #ebebeb;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* header */
 .header {
   display: flex;
@@ -74,12 +91,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
 }
 
 .video,
 .image {
   width: 100%;
-  border-radius: 12px;
+  border-radius: inherit;
 }
 
 @media only screen and (max-width: 1180px) {

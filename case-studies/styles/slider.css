@@ -30,7 +30,7 @@
 }
 
 .slide {
-  width: 600px;
+  /* width: 600px; */
   display: flex;
   align-items: center;
   padding: 15px;
