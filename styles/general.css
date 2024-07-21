@@ -7,7 +7,21 @@ body {
   color: #ebebeb;
 }
 
+h1 {
+  font-family: "Playfair Display", Arial;
+  font-weight: 400;
+  margin: 0;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+button {
+  font-family: Inter, Arial;
+  font-weight: 500;
+  font-size: 16px;
 }

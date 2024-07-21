@@ -10,13 +10,13 @@
   margin-bottom: 128px;
 }
 
-.header {
-  font-family: "Playfair Display", Arial;
+h1 {
   font-size: 40px;  
 }
 
 .caption {
   font-size: 24px;
+  line-height: 28px;
 }
 
 /* project */
@@ -37,11 +37,11 @@
 .card {
   width: 80%;
   margin: auto;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  width: 85%;
-  transition: 0.2s;
+  transform: scale(1.05); 
 }
 
 .thumbnail {
