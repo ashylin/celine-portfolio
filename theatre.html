@@ -3,6 +3,8 @@
   <head>
     <title>Celine's Theatre Page</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -27,33 +29,51 @@
         <img src="theatre-content/alejandro ruiz.png">
       </div>
       <div class="content-container">
-        <div class="left-content">
+        <div class="content">
           <h1>Celine's Theatre</h1>
           <p>Welcome. Check out the showings for the life of Celine where 
             you’ll see the some of the collection of her experiences and 
             hobbies. Explore the page to get to know her.
           </p>
-          <p class="caption">Picture with Voice Actor for Gekko of VALORANT!</p>
-        </div>
-        <div class="right-content">
-          <img src="theatre-content/celine nguyen-resume.png">
-          <div class="resume-button">
-            <button>View Resume</button>
-          </div>
+          <p class="caption">Picture with Voice Actor for Gekko from VALORANT!</p>
         </div>
       </div>
     </div>
     
     <main>
-      <p class="scenes">SCENES</p>
+      <p class="scene-container">SCENES</p>
       <div class="scene-grid">
-        <div class="scene"></div>
-        <div class="scene"></div>
-        <div class="scene"></div>
-        <div class="scene"></div>
-        <div class="scene"></div>
-        <div class="scene"></div>
+        <div class="video-container">
+          <video class="video" src="theatre-content/pokemon center japan.mp4" loop autoplay muted></video>
+          <p>Visited the Pokémon Center in Japan! Got to design my own t-shirt</p>
+        </div>
+        <div class="video-container">
+          <video class="video" src="theatre-content/tokyo tower timelapse.mp4" loop autoplay muted></video>
+          <p>Made a 3 hour timeplase of Tokyo</p>
+        </div>
+        <div class="video-container">
+          <video class="video" src="theatre-content/self driving car.mp4" loop autoplay muted></video>
+          <p>First time riding in a self-driving car! Waymo for the win!</p>
+        </div>
+        <div class="video-container">
+          <video class="video" src="theatre-content/path of the wind orchestra.mp4" loop autoplay muted></video>
+          <p>Attended a Studio Ghibli orchestra! Any Totoro fans?</p>
+        </div>
+        <div class="video-container">
+          <video class="video" src="theatre-content/cable car in sf.mp4" loop autoplay muted></video>
+          <p>Did you know City Escape from Sonic Adventure Battle 2 was based on San Francisco?</p>
+        </div>
+        <div class="video-container">
+          <video class="video" src="theatre-content/blue flower field showa kinen park.mp4" loop autoplay muted></video>
+          <p>A hidden gem in Japan! Check out the Nemophila field</p>
+        </div>
       </div>
+
+      <div class="popup-video">
+        <span>&times;</span>
+        <video muted autoplay controls></video>
+      </div>
+      <script src="script.js"></script>
     </main>
   </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 0 64px 0;
 }
 
 .header {
@@ -16,6 +16,7 @@ body {
 
 .image-container img {
   width: 100%;
+  object-fit: cover;
 }
 
 .image-container::before {
@@ -29,15 +30,13 @@ body {
 }
 
 .content-container {
-  width: 100%;
+  width: 100%; height: 100%;
   position: absolute;
-  bottom: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.left-content {
+.content {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -46,59 +45,99 @@ body {
 }
 
 h1 {
-  font-size: 80px;
-  margin-bottom: 32px;
+  font-size: 5.5vw;
+  margin-bottom: 16px;
 }
 
-.left-content p {
+.content p {
   width: 70%;
+  font-size: 1.5vw;
+  line-height: 1.8vw;
   margin: 0 auto;
-  font-size: 24px;
-  line-height: 28px;
 }
 
 .caption {
   font-weight: bold;
+  padding-bottom: 32px;
 }
 
-.right-content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  right: 0;
-  width: 18%;
-  padding: 0 24px 24px 0;
-  transition: transform 0.3s ease;
-  transform-origin: right bottom;
-}
-
-.right-content:hover {
-  transform: scale(1.05); 
-  cursor: pointer;
-}
-
-.resume-button {
-  text-align: right;
-  border-radius: 4px;
-}
-
-.resume-button button {
-  border-radius: inherit;
-  border-color: #FFFFFF;
-}
-
-.resume-button button:hover {
-  cursor: pointer;
-}
-
-/* scene grid*/
-.scenes {
+/* scene grid */
+.scene-container {
   font-weight: bold;
   margin: 32px;
 }
 
 .scene-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
+  padding: 0 64px;
+  overflow: hidden;
+}
+
+.scene-grid .video {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.scene-grid .video:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.scene-grid p {
+  text-align: center;
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .scene-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .image-container {
+    height: 300px;
+  }
+  .scene-grid {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    width: 100%;
+  }
+  h1 {
+    font-size: 8vw;
+    margin-bottom: 0;
+  }
+  .content p {
+    width: 70%;
+    font-size: 2.5vw;
+    line-height: 2.8vw;
+    margin: 0 auto;
+  }
+}
+
+.popup-video {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%; height: 100%;
+  display: none; /* video hidden by default */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.popup-video video {
+  height: 80%;
+}
+
+.popup-video span {
+  position: absolute;
+  top: 12px; right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }
