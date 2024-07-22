@@ -3,6 +3,8 @@
   margin: 128px auto;
 
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 48px;
 }
 
@@ -19,6 +21,7 @@
 
 .image-container {
   border-radius: 24px;
+  padding-top: 20px;
 }
 
 .image-container img {
@@ -28,7 +31,8 @@
 
 .resume-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
@@ -38,20 +42,29 @@
 }
 
 .resume-container img {
-  width: 50%;
+  width: 100%;
+}
+
+.resume-container p {
+  color: white;
 }
 
 .resume-button {
   text-align: right;
   border-radius: 4px;
+  display: none;
 }
 
 .resume-button button {
   border-radius: inherit;
-  border-color: #FFFFFF;
+  border-style: none;
+  padding: 4px 8px;
 }
 
 .resume-button button:hover {
+  background-color: #222222;
+  color: #FFDB80;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -69,9 +82,18 @@
   .left-content {
     max-width: 100%;
     padding: 0 32px;
+    align-items: flex-end;
+  }
+  .resume-container img,
+  .resume-container p {
+    display: none;
+  }
+  .resume-button {
+    display: flex;
   }
   .right-content {
     padding: 0 32px;
+    display: flex;
   }
 }
 

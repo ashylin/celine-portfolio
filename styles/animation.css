@@ -45,7 +45,18 @@
   animation: fadeInFromBottom 0.75s ease;
 }
 
+/* theatre page */
+.content h1 {
+  animation: fadeInFromBottom 0.5s ease-out;
+}
+.welcome {
+  animation: fadeInFromBottom 0.75s ease-out;
+}
+.caption {
+  animation: fadeInFromBottom 1s ease-out;
+}
+
 /* me page */
-.intro {
+.greeting {
   animation: bounce 1s ease-out;
 }

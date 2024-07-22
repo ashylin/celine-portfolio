@@ -10,7 +10,7 @@ body {
 h1 {
   font-family: "Playfair Display", Arial;
   font-weight: 400;
-  margin: 0;
+  margin: 0; padding: 0;
 }
 
 p {
