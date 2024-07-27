@@ -121,3 +121,24 @@
   text-underline-offset: 0.2em;
   cursor: pointer;
 }
+
+.signature-container {
+  width: 20%;
+}
+
+.signature-container img {
+  width: 100%;
+}
+
+.appraisals p {
+  line-height: 24px;
+}
+
+.author {
+  font-style: italic;
+  margin: 4px 0;
+}
+
+.appraisal {
+  margin-bottom: 48px;
+}
